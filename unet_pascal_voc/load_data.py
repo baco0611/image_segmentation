@@ -27,11 +27,11 @@ for line in lines:
     image_list.append(image)
 
     image_segment = cv2.imread(segment_path)
-    cv2.imwrite(f"./data/data/SegmentationObject/{line}.jpg", image)
+    cv2.imwrite(f"./data/data/SegmentationObject/{line}.jpg", image_segment)
     segment_list.append(image_segment)
 
     image_segment = cv2.imread(segment_class_path)
-    cv2.imwrite(f"./data/data/SegmentationClass/{line}.jpg", image)
+    cv2.imwrite(f"./data/data/SegmentationClass/{line}.jpg", image_segment)
     segment_class_list.append(image_segment)
 
 data_path = "./data/data"
