@@ -34,7 +34,7 @@ for line in lines:
     cv2.imwrite(f"./data/data/SegmentationClass/{line}.jpg", image_segment)
     segment_class_list.append(image_segment)
 
-data_path = "./data/data"
+data_path = "./data/data/pure_data"
 joblib.dump(image_list, f"{data_path}/image.joblib")
 joblib.dump(segment_list, f"{data_path}/segmentation_object.joblib")
 joblib.dump(segment_class_list, f"{data_path}/segmentation_class.joblib")
