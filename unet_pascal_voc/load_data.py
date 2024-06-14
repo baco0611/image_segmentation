@@ -23,15 +23,15 @@ for line in lines:
     segment_class_path = os.path.join(segment_class_source_path, f"{line}.png")
     
     image = cv2.imread(image_path)
-    cv2.imwrite(f"./data/dataset/{line}.jpg", image)
+    cv2.imwrite(f"./data/data/dataset/{line}.jpg", image)
     image_list.append(image)
 
     image_segment = cv2.imread(segment_path)
-    cv2.imwrite(f"./data/SegmentationObject/{line}.jpg", image)
+    cv2.imwrite(f"./data/data/SegmentationObject/{line}.jpg", image)
     segment_list.append(image_segment)
 
     image_segment = cv2.imread(segment_class_path)
-    cv2.imwrite(f"./data/SegmentationClass/{line}.jpg", image)
+    cv2.imwrite(f"./data/data/SegmentationClass/{line}.jpg", image)
     segment_class_list.append(image_segment)
 
 data_path = "./data/data"
