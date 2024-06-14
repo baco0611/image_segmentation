@@ -1,0 +1,11 @@
+*.zip
+*.pickle
+*.joblib
+*.h5
+*.docx
+*.xlsx
+*.doc
+*.xls 
+*.tar
+*.crdownload
+VOCdevkit/
